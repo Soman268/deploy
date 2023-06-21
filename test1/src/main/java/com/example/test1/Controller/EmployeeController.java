@@ -15,7 +15,7 @@ public class EmployeeController {
     @Autowired
     private EmployeeRepository employeeRepository;
 
-    @GetMapping("/")
+   @RequestMapping(method = RequestMethod.GET)
     public String showForm(Model model) {
         model.addAttribute("employee", new Employee());
         return "employeeForm";
