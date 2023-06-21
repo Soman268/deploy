@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 
 @Controller
+@RequestMapping
 public class EmployeeController {
     @Autowired
     private EmployeeRepository employeeRepository;
